@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/babel" src="/js/orderList.js"></script>
+        <script type="text/babel" src="/js/join.js"></script>
+        <link rel="stylesheet"  href="/css/orderList.css"></link>
+        <link rel="stylesheet"  href="/css/join.css"></link>
+    </header>
+    <body>
+        <div id="app"></div>
+    </body>
+</html>
+<script type="text/babel">
+    const App = () => {
+        return (
+            <>
+                <Join />
+                <OrderList />
+            </>
+        );
+    }
+    const domContainer = document.querySelector('#app');
+    const root = ReactDOM.createRoot(domContainer);
+    root.render(<App/>);
+</script>

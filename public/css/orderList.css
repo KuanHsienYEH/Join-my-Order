@@ -1,0 +1,27 @@
+.loading{
+    font-size: x-large;
+    text-align: center;
+}
+.order-container{
+    width: 60%;
+    margin: auto;
+}
+.order-container h3{
+    text-align: center;
+    font-size: x-large;
+}
+.order-header{
+    display: grid;
+    grid-gap: 20px;
+    margin-bottom: 5px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.order-header span{
+    font-size: large;
+    font-weight: 600;
+}
+.order-list{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr) ;
+}
